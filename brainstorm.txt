@@ -1,0 +1,35 @@
+Reinforcement learning agent to play snake game
+
+1.) Snake game environment
+
+- Board size: m x n
+- Max # of moves: MAX_MOVES = 200?
+Food: 
+--> Red dot that takes up one grid cell
+--> Spawns at position X ~ [U(0,m), U(0,n)]
+- Snake:
+--> set of white grid cells
+--> Spawns as one white dot at position X ~ [U(0,m), U(0,n)]
+--> Snake action space: [Up, Down, Left, Right]
+--> Snake representation:
+snake_body = snake_length x 2 numpy array of grid cell positions
+--> Snake movement
+snake_body[1:] = snake_body[:-1]
+snake_body[0] += action_to_motion(direction)
+action to motion map
+--> Snake movement:
+
+
+- Game Over scenarios:
+--> Number of moves exceeds MAX_MOVES
+--> Snake head touches snake body
+--> Snake head leaves bounds: 
+    Head[0] < 0
+    Head[0] > m - 1
+    Head[1] < 0
+    Head[1] > n - 1
+
+2.) Neural network architecture
+
+
+3.) Training
