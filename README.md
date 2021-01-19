@@ -7,4 +7,6 @@ Fair warning, training the CNN proved to be very finicky! After almost a day of 
 
 The best game I observed was a snake that reached a length 72 from the Actor Critic snake using an ANN. One major difficulty that I think deserves more thought is that once the snake exceeds a certain length, there are adversarial food placements that will always force the snake to eat itself. Perhaps after a sufficient amount of training, a CNN could develop a deep enough representation of the game state to somehow prevent this.
 
+It was also interesting to see the snake develop weird, walking-like patterns (as shown below).
+
 <img src="snake_gif.gif">
